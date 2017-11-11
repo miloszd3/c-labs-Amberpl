@@ -6,9 +6,9 @@
 
 int main(int argc, char const *argv[]) {
 
-  double a[4];
+  double a[argc];
 
-  for (int i = 1; i < 4; i++) {
+  for (int i = 1; i < argc; i++) {
     a[i] = atof(argv[i]);
   }
 
