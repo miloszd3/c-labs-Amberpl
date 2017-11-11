@@ -4,16 +4,15 @@
 
 int main() {
 
-int liczba=0;
-int wynik=0;
+int liczba;
+int wynik=1;
 
   printf("Podaj liczbe: ");
   scanf("%i", &liczba);
 
-  for (int i = 0; i < liczba; i++) {
-    wynik = wynik + liczba;
+  for (int i = 1; i < liczba+1; i++) {
+    wynik = wynik * i;
   }
-
   printf("\nSilnia z %i=%i\n", liczba, wynik);
   return 0;
 }
