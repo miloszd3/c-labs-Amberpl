@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 float liczby[6];
-float najwieksza;
+float najwieksza, najmniejsza;
 int i=1, j;
 
 int main() {
@@ -14,7 +14,7 @@ int main() {
 
   printf("\nWprowadzone liczby to:\n");
   for (j = 0; j < 6; j++) {
-    printf("%f ", liczby[j]);
+    printf("%.3f ", liczby[j]);
   }
   najwieksza = liczby[0];
   for (j = 0; j < 6; j++) {
@@ -22,5 +22,13 @@ int main() {
       najwieksza=liczby[j];
     }
   }
-  printf("\n\nNajewieksza liczba ze zbioru to: %f\n", najwieksza);
+  printf("\n\nNajewieksza liczba ze zbioru to: %.3f\n", najwieksza);
+
+  najmniejsza = liczby[0];
+  for (j = 0; j < 6; j++) {
+    if (najmniejsza>liczby[j]) {
+      najmniejsza=liczby[j];
+    }
+  }
+  printf("Najmniejsza liczba ze zbioru to: %.3f\n", najmniejsza);
 }
