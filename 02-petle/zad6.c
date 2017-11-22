@@ -5,7 +5,7 @@ float najwieksza;
 int i=1, j;
 
 int main() {
-  printf("Podj szesc liczb calkowitych:\n");
+  printf("Podj szesc liczb rzeczywistych:\n");
   while (i<=6) {
     printf("liczba [%i]=", i);
     scanf("%f", &liczby[i-1]);
