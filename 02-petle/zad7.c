@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float liczby[6];
+float liczby[5];
 int dodatnie;
 int i=1, j;
 
