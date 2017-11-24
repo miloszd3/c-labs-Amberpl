@@ -15,5 +15,4 @@ int main() {
   }
   n=i-1;
   printf("Szukane n to: %i", n);
-  return 0;
 }
