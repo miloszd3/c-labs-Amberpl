@@ -1,4 +1,5 @@
 #include "stdio.h"
+// Wszytkie figury
 
 int i, j, k;
 
