@@ -1,18 +1,12 @@
 #include <stdio.h>
-
 int main() {
-
-  int i, n, jest_pierwsza;
+  int n,jest_pierwsza,i;
 
   printf("Podaj liczbe calkowita: ");
-  scanf("%i", &n);
-
-  for (i = 2; i*i <= n; i++) {
-    if (n%i == 0) {
-      jest_pierwsza = 0;
-    }
-    else jest_pierwsza = 1;
+  scanf("%d", &n);
+   for (i = 2; i*i <= n; i++) {
+   if (n%i == 0)
+   jest_pierwsza = 0;
   }
-
-  printf("Podana liczba '%d' jest %s\n", n, jest_pierwsza ? "pierwsza" : "złożona");
+ printf("Podana liczba '%d' jest %s\n", n, jest_pierwsza ? "pierwsza" : "złożona");
 }
